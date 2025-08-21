@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock-paper-scissors</title>
+  </head>
+  <body>
+
+
+
+    <div class="hero">
+      <h1>Rock Paper Scissors Game</h1>
+      <p class="subtext">
+        <span class="player-text">PLAYER</span><span class="vs"> VS </span
+        ><span class="cpu-text">COMPUTER</span>
+      </p>
+      <div class="box">
+        <img src="./images/Untitled-2.png" alt="gamer-boy" class="gamer" />
+        <button class="button-with-icon">
+          <svg
+            class="icon"
+            id="Play"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="color000000 svgShape"
+              fill="#ffffff"
+              d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
+            ></path>
+          </svg>
+          <span class="text">Play</span>
+        </button>
+        <img
+          src="./images/Lovepik_com-380600260-computer-vector-cartoon-sticker 2.png"
+          alt="pc-picture"
+          class="pc"
+        />
+      </div>
+    </div>
+
+    <div class="playScreen"> 
+
+      <h1>Score</h1>
+      <h2>Pick Ur Weapon!!!</h2>
+      <div class="points">
+      <h2>
+        <span class="player-score">0</span><span>:</span><span class="cpu-score">0</span>
+      </h2>
+    </div>
+      <div class="play-box">
+        <p class="player-text">PLAYER</p>
+         <span class="player-pick"><!--<img src="./images/paper.png" alt="">--></span> 
+        <p class="winner">
+          <span class="win-text"></span><span class="winnerIs"></span>
+        </p>
+        <span class="cpu-pick"><!--<img src="./images/scissors.png" alt="">--></span>
+        <p class="cpu-text">COMPUTER</p>
+      </div>
+    
+        <div class="player-choices">
+        <button class="img-btn"><img src="./images/rock.png" alt="rock photo" id="rock"></button>
+        <button class="img-btn"><img src="./images/paper.png" alt="paper photo" id="paper"></button>
+        <button class="img-btn"><img src="./images/scissors.png" alt="scissors photo" id="scissors"></button>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

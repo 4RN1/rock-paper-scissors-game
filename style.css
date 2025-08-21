@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Luckiest+Guy&display=swap");
+
+:root {
+  --big-text: 5.9rem;
+  --nomral-text: 4.8rem;
+  --player-color: #28d3b6;
+  --cpu-color: #fee14b;
+  --main-font-family: "Luckiest Guy", cursive;
+  --second-font-family: "Fontdiner Swanky", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+  /* outline: 1px solid red; */
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 92vh;
+  background: url(./images/Mesh\ 24.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 12.7rem;
+}
+
+.sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  background-color: antiquewhite;
+}
+
+.hero {
+  height: 100%;
+  max-height: 82rem;
+}
+
+h1 {
+  text-align: center;
+  color: #ffff;
+  margin: 5rem 0 5rem 0;
+  font-size: var(--big-text);
+  font-weight: 400;
+}
+
+.subtext {
+  font-size: var(--nomral-text);
+  display: flex;
+  justify-content: space-around;
+}
+
+.player-text {
+  color: var(--player-color);
+}
+
+.cpu-text {
+  color: var(--cpu-color);
+}
+
+.vs {
+  font-size: 8.9rem;
+  color: #fff;
+  font-family: var(--second-font-family);
+}
+
+.gamer {
+  width: 36.9rem;
+  transform: translate(1rem, -3rem);
+}
+
+.pc {
+  width: 63rem;
+  transform: translate(6rem, -5.5rem);
+}
+
+
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box button {
+  position: relative;
+  left: 9.5rem;
+  bottom: 16rem;
+}
+
+.button-with-icon {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0f988e;
+  font-family: "Istok Web", sans-serif;
+  letter-spacing: 1px;
+  padding: 0 12px;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 10px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transform: translateY(0px);
+  position: relative;
+  box-shadow: inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #0f988e, 0 3px 2px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #15ccbe;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  transition: 150ms all ease-in-out;
+}
+
+.button-with-icon .icon {
+  margin-right: 3px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-with-icon:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 20px rgba(0, 0, 0, 0.1), 0 0 0 #0f988e,
+    0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon:hover .text {
+  transform: translateX(180px);
+}
+.button-with-icon:hover .icon {
+  transform: translate(50px);
+}
+
+.text {
+  transition: all 0.5s ease-in-out;
+}
+
+.hero {
+  display: block;
+}
+
+
+/* GAME SCREEN */
+
+.points {
+  text-align: center;
+  font-size: var(--nomral-text);
+  color: #FFF;
+  font-weight: 400;
+  margin: 2rem;
+  
+  
+}
+
+.playScreen h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #FFF;
+  font-weight: 400;
+}
+
+
+.points span {
+  font-size: var(--big-text);
+  
+  
+}
+
+.win-text {
+  color: #26FF55;
+}
+
+.winner {
+  display: flex;
+  gap: 1rem;
+}
+
+.play-box {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  color: #FFF;
+  font-size: var(--nomral-text);
+  align-items: center;
+  margin-bottom:5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 6rem 0;
+}
+
+.win-text {
+  margin-left: 6rem;
+}
+
+.player-choices {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+}
+
+
+.button-with-icon2 {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0f988e;
+  font-family: "Istok Web", sans-serif;
+  letter-spacing: 1px;
+  padding: 0 12px;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: normal;
+  border-radius: 10px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transform: translateY(0px);
+  position: relative;
+  box-shadow: inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3), inset 0 1px 20px rgba(0, 0, 0, 0),
+    0 3px 0 #0f988e, 0 3px 2px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #15ccbe;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  transition: 150ms all ease-in-out;
+}
+
+.button-with-icon2 .icon {
+  margin-right: 3px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-with-icon2:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 1px 20px rgba(0, 0, 0, 0.1), 0 0 0 #0f988e,
+    0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(0, 0, 0, 0);
+}
+
+.button-with-icon2:hover .text {
+  transform: translateX(280px);
+}
+.button-with-icon2:hover .icon {
+  transform: translate(115px);
+}
+
+.text {
+  transition: all 0.5s ease-in-out;
+}
+
+.img-btn {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.playScreen {
+  display: none;
+}
